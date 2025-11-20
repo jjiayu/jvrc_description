@@ -3,7 +3,7 @@ project(jvrc_description VERSION 1.0.4)
 
 find_package(ament_cmake REQUIRED)
 
-install(DIRECTORY launch meshes rsdf urdf
+install(DIRECTORY launch meshes rsdf urdf rviz
     DESTINATION share/${PROJECT_NAME}
 )
 
