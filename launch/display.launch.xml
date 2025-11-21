@@ -1,12 +1,12 @@
 <launch>
     <let name="urdf_path" 
-         value="$(find-pkg-share jvrc_description)/urdf/jvrc1.urdf" />
+         value="$(find-pkg-share jvrc_description)/urdf/jvrc1.xacro" />
     <let name="rviz_config_path"
          value="$(find-pkg-share jvrc_description)/rviz/urdf_config.rviz" />
 
     <node pkg="robot_state_publisher" exec="robot_state_publisher">
         <param name="robot_description"
-               value="$(command 'cat $(var urdf_path)')" />
+               value="$(command 'xacro $(var urdf_path)')" />
     </node>
 
     <node pkg="joint_state_publisher_gui" exec="joint_state_publisher_gui" />
