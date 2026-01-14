@@ -2,4 +2,5 @@
 
 <robot name="jvrc1" xmlns:xacro="http://www.ros.org/wiki/xacro">
   <xacro:include filename="$(find jvrc_description)/urdf/jvrc1_robot.urdf.xacro" />
+  <xacro:include filename="$(find jvrc_description)/urdf/jvrc1.ros2_control.xacro" />
 </robot>
